@@ -1,0 +1,1 @@
+import{X as c,v as o,Y as p,Z as r,_ as C}from"./index-BncDn27B.js";const a=(s,...t)=>o("cms",{start:()=>({type:p}),success:e=>({type:r,...e}),fail:e=>({type:C,error:e})},s,...t),m=()=>({type:c}),n=(s=1,t=10,e="")=>a("index",s=1,t=10,e=""),_=(s,t)=>a("patch",s,t);export{n as g,_ as p,m as r};

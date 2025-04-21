@@ -1,0 +1,1 @@
+import{j as r}from"./index-BncDn27B.js";const s=({children:p,dark:e=!1})=>r.jsx("div",{className:"UI TitleWrapper py-2 py-md-3 py-xxl-4 px-3 px-md-4 px-xxl-5 bg-border-15 position-relative",children:p});export{s as T};

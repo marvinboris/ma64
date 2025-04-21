@@ -1,0 +1,1 @@
+import{az as g,v as n,aA as o,aB as c,aC as p}from"./index-BncDn27B.js";const t=(a,...s)=>n("languages",{start:()=>({type:o}),success:e=>({type:c,...e}),fail:e=>({type:p,error:e})},a,...s),L=()=>({type:g}),u=(a=1,s=10,e="")=>t("index",a=1,s=10,e=""),r=a=>t("show",a),S=a=>t("post",a),G=(a,s)=>t("patch",a,s),E=a=>t("delete",a);export{r as a,G as b,E as d,u as g,S as p,L as r};

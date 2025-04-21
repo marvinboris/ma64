@@ -1,0 +1,1 @@
+import{j as t,C as l}from"./index-BncDn27B.js";const x=({bg:a="white",children:e,text:n="dark",innerClassName:i="",user:s,style:o,innerStyle:r})=>t.jsx(l,{xs:12,className:(s?"py-0 ":"py-5 ")+("bg-"+a+" ")+("text-"+n),style:o,children:t.jsx("div",{className:(s?"container-fluid":"container")+" "+i,style:r,children:e})});export{x as p};

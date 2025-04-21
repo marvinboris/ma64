@@ -1,0 +1,1 @@
+import{aQ as o,v as c,aR as d,aS as p,aT as h}from"./index-BncDn27B.js";const a=(s,...t)=>c("methods",{start:()=>({type:d}),success:e=>({type:p,...e}),fail:e=>({type:h,error:e})},s,...t),S=()=>({type:o}),n=(s=1,t=10,e="")=>a("index",s=1,t=10,e=""),r=s=>a("show",s),T=s=>a("post",s),E=(s,t)=>a("patch",s,t),g=s=>a("delete",s);export{r as a,E as b,g as d,n as g,T as p,S as r};

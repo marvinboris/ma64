@@ -1,0 +1,1 @@
+import{j as s,O as m}from"./index-BncDn27B.js";const r=({children:e,color:t,icon:a,iconColor:n="reset",className:l,size:i,pill:x})=>s.jsxs(m,{color:t,size:i,className:"d-inline-flex align-items-center "+(x?" rounded-pill ":"")+l,children:[s.jsx("span",{className:"text-300",children:e}),s.jsx("i",{className:"ml-3 fas fa-lg fa-"+a+" text-"+n})]});export{r as b};
