@@ -15,6 +15,7 @@ import "./Layout.css";
 import { State } from "@/src/store";
 import { Language } from "@/src/types/language";
 import { Dispatch, UnknownAction } from "redux";
+import { Outlet } from "react-router";
 
 type Props = PropsWithChildren &
     State & { logout: Function; set: (id: string) => void; dark?: boolean };
@@ -181,7 +182,7 @@ class Layout extends Component<Props> {
                                 <CustomSpinner />
                             </div>
                         ) : (
-                            children
+                            <Outlet />
                         )}
                     </div>
 

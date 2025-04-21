@@ -77,13 +77,11 @@ export default (props: {
             {slides}
             <CarouselControl
                 direction="prev"
-                directionText="Previous"
                 onClickHandler={previous}
                 className="btn btn-dark"
             />
             <CarouselControl
                 direction="next"
-                directionText="Next"
                 onClickHandler={next}
                 className="btn btn-black rounded-right-0"
             />

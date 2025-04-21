@@ -2,6 +2,7 @@ import { State } from "@/src/store";
 import { Content } from "@/src/types/content";
 import React, { Component, PropsWithChildren } from "react";
 import { connect } from "react-redux";
+import { Outlet } from "react-router";
 import { Container, Row, Col } from "reactstrap";
 
 class Layout extends Component<PropsWithChildren & State & { dark?: boolean }> {
@@ -69,7 +70,7 @@ class Layout extends Component<PropsWithChildren & State & { dark?: boolean }> {
                                             />
 
                                             <div className="mt-3">
-                                                {children}
+                                                <Outlet />
                                             </div>
                                         </div>
                                     </Row>

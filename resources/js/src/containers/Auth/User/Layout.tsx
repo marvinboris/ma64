@@ -1,5 +1,5 @@
 import React, { Component, PropsWithChildren } from "react";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { connect } from "react-redux";
 import { Container, Row, Col } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -160,7 +160,7 @@ class Auth extends Component<PropsWithChildren & State & { dark?: boolean }> {
                                 >
                                     <Row className="justify-content-center">
                                         <div className="col-xxl-3 col-xl-4 col-lg-5 col-md-6 col-sm-9">
-                                            {children}
+                                            <Outlet />
                                         </div>
                                     </Row>
                                 </Col>

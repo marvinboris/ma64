@@ -5,6 +5,7 @@ import Toolbar from "../../components/Navigation/Toolbar/Toolbar";
 import Footer from "../../components/Footer/Footer";
 import { Content } from "@/src/types/content";
 import { State } from "@/src/store";
+import { Outlet } from "react-router";
 
 class Layout extends Component<PropsWithChildren & State & { dark?: boolean }> {
     render() {
@@ -33,7 +34,9 @@ class Layout extends Component<PropsWithChildren & State & { dark?: boolean }> {
                     drawerToggleClicked={sideDrawerToggleHandler}
                 />
 
-                <main className="Content w-100 min-vh-100">{children}</main>
+                <main className="Content w-100 min-vh-100">
+                    <Outlet />
+                </main>
 
                 <Footer />
             </div>

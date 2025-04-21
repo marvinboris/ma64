@@ -19,11 +19,12 @@ import { State } from "@/src/store";
 class Blog extends Component<
     State & {
         get: (slug: string) => void;
-        match: { params: { postCategorySlug: string } };
+        match?: { params: { postCategorySlug: string } };
     }
 > {
     componentDidMount() {
-        this.props.get(this.props.match.params.postCategorySlug);
+        if (this.props.match)
+            this.props.get(this.props.match?.params.postCategorySlug);
     }
 
     render() {

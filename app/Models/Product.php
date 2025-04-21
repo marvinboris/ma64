@@ -14,14 +14,20 @@ class Product extends Model
     protected $directory = '/images/products/';
 
     protected $fillable = [
-        'name', 'photo', 'price', 'description', 'brand_id', 'slug'
+        'name',
+        'photo',
+        'price',
+        'description',
+        'brand_id',
+        'slug'
     ];
 
     protected $appends = [
-        'stringified', 'link',
+        'stringified',
+        'link',
     ];
 
-    public function sluggable()
+    public function sluggable(): array
     {
         return [
             'slug' => [
